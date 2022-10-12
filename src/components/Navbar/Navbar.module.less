@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  grid-area: nav;
+  justify-content: flex-end;
+
+  .ulWrapper {
+    align-items: end;
+    width: 67px;
+    margin-right: 55px;
+
+    .items {
+      list-style-type: none;
+
+      .item {
+
+        font-size: 16px;
+        display: 16px;
+        .link{
+          text-decoration: none;
+          color: #888888;
+          &:hover {
+            color: #333333;
+          }
+
+
+        }
+        .active {
+          color: red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+

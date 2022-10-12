@@ -19,12 +19,14 @@ module.exports = {
     devtool,
     devServer: {
         hot: true,
+        historyApiFallback: true,
     },
     entry: ['@babel/polyfill',path.resolve(__dirname, 'src', 'index.js')],
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         filename: 'scripts.js',
+        publicPath: '/'
     },
     plugins: [
         new HtmlWebpackPlugin({

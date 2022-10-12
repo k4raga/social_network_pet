@@ -1,0 +1,49 @@
+
+.contentWrapper {
+  grid-area: cont;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.wrapper {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-areas: 'd' 'l' 'm';
+  grid-template-columns: 178px 50px 1fr;
+  .conversation {
+    grid-area: d;
+    width: 178px;
+    .title {
+      font-size: 24px;
+    }
+    .list {
+      grid-area: l;
+      list-style-type: none;
+      padding-left: 0;
+
+      .item {
+        margin-bottom: 20px;
+        color: #888888;
+      }
+    }
+  }
+  .line {
+    width: 20px ;
+    background-color: #f0f0f0;
+
+  }
+  .messages{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+}
+
+
+
+
